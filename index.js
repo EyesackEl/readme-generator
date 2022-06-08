@@ -10,6 +10,7 @@ const questions = [
     ['Please enter the usage information for your project','usage'],
     ['Please enter the contribution guidelines for your project','contributing'],
     ['Please enter test instructions for your project','test'],
+    ['Please enter your Email', 'email'],
     ['Please choose a License for your project','license',[
         'Apache',
         'BSD 2-Clause',
@@ -61,10 +62,15 @@ function init() {
         name: questions[5][1]
         },
         {
-        type: 'list',
+        type: 'input',
         message: questions[6][0],
-        name: questions[6][1],
-        choices: questions[6][2] 
+        name: questions[6][1]
+        },
+        {
+        type: 'list',
+        message: questions[7][0],
+        name: questions[7][1],
+        choices: questions[7][2] 
         }
     ])
     .then(response => {

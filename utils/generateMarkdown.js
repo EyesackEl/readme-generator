@@ -53,15 +53,16 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  const tOfC = '- [Installation](#installation)\n- [Usage](#usage)\n- [Credits](#contributing)\n- [Test Instructions](#test-instructions)\n- [License](#license)';
   const title = `# ${data.title}`;
+  const tOfC = '- [Installation](#installation)\n- [Usage](#usage)\n- [Credits](#contributing)\n- [Test Instructions](#test-instructions)\n- [License](#license)';
+  const email = `Reach the author of this README at [${data.email}](mailto:${data.email})`
   const description = `## Description\n${data.description}`;
   const installation = `## Installation\n${data.installation}`;
   const usage = `## Usage\n${data.usage}`;
   const contributing = `## Contributing\n${data.contributing}`;
   const test = `## Test Instructions\n${data.test}`;
 
-  const fullMarkdown = `${title}\n\n${tOfC}\n\n${description}\n\n${installation}\n\n${usage}\n\n${contributing}\n\n${test}`;
+  const fullMarkdown = `${title}\n\n${tOfC}\n\n${email}\n\n${description}\n\n${installation}\n\n${usage}\n\n${contributing}\n\n${test}`;
 
   fs.appendFile('README.md', fullMarkdown, err =>
     err ? console.error(err) : console.log('\n\tUpdated README\n')
