@@ -79,7 +79,7 @@ function init() {
             return;
         }
         console.log(response);
-        const fileName = 'README.md';   
+        const fileName = 'new-README.md';   
         writeToFile(fileName);
         generateMarkdown(response);
     })

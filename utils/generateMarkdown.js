@@ -34,7 +34,7 @@ function getLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license === 'N/A') {
-    fs.appendFile('README.md', `\n\n## License\nToo cool for a license 😎`, err =>
+    fs.appendFile('new-README.md', `\n\n## License\nToo cool for a license 😎`, err =>
       err ? console.error(err) : console.log('\n\tUpdated License Section\n')
     );
     return;
@@ -64,7 +64,7 @@ function generateMarkdown(data) {
 
   const fullMarkdown = `${title}\n\n${tOfC}\n\n${email}\n\n${description}\n\n${installation}\n\n${usage}\n\n${contributing}\n\n${test}`;
 
-  fs.appendFile('README.md', fullMarkdown, err =>
+  fs.appendFile('new-README.md', fullMarkdown, err =>
     err ? console.error(err) : console.log('\n\tUpdated README\n')
   );
 
