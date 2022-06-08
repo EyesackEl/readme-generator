@@ -14,6 +14,8 @@ This project is a command line application for generating a unique, quality READ
 ## Usage
 This project is used by running the index.js file  and answering the prompts in the command line, when complete a README will appear in the same directory as index.js.
 
+[Click here to see the application in action](https://user-images.githubusercontent.com/101996599/172535727-97ab9afe-d2f9-450f-9fd0-a1a8d2209755.mp4)
+
 ## License
 [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
 
@@ -21,5 +23,5 @@ This project is licensed under the Do What the Fuck You Want to Public license, 
 
 
 
-https://user-images.githubusercontent.com/101996599/172535727-97ab9afe-d2f9-450f-9fd0-a1a8d2209755.mp4
+
 
